@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>CLIMA</title>
+		<link rel="stylesheet" href="css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Arima+Madurai" rel="stylesheet">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">		
+	</head>
+
+	<body>
+		<header class="main-header">
+			<h1>World Weather</h1>
+			<h2>An awesome way to see the world</h2>
+		</header>
+
+		<div class="loader">GEOLOCALIZANDO TU POSCIÓN, POR FAVOR ESPERE..</div>
+		
+		<!-- agregando un formulario para añadir ciudades -->
+		<form action="" class="search">
+			<input type="text" data-input="cityAdd" class="search__text" placeholder="Agrega un nueva ciudad">
+			<input type="submit" data-button="add" class="search__btn" value="Añadir ciudad" >
+
+			<!-- Se agrego un Nuevo Boton para cargar las ciudades vistas -->
+			<button data-saved-cities class="search__btn">Ultimas busquedas</button>
+		</form>
+
+		<main class="cards_group">
+		    
+		    <!--las etiquetas template nos permiten ocultar el contenido html hasta que sea cargado con los datos necesarios y despues sea llamado a traves del js, por lo cual si usamos una API para obtener datos que sean de soporte para nuestra appweb seran muy utiles-->
+			
+			<template id="template--city">
+				<article >
+					<div class="card">
+						<header class="card__header">
+							<h3 class="card__title" data-city></h3>
+							<h4 class="card__time" data-time></h4>
+						</header>
+					</div>
+					<div class="card__info">
+						<img src="" alt="" class="card__image" data-icon />
+						<span class="card__maxt" data-temp="max"></span>
+						<span class="card__mint" data-temp="min"></span>
+						<span class="card__temp" data-temp="current"></span>
+					</div>
+				</article>
+			</template>
+
+		</main>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="js/index.js"></script>	
+	</body>
+</html>

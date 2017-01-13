@@ -1,0 +1,99 @@
+html{
+	background-color: #DDD;
+	font-family:  'lato',sans-serif;
+}
+
+
+header{
+	text-align: center;
+	padding: 1em;
+}
+
+article{
+	height: 20em;
+	background-size: 100% 100%;
+	border-style: inset;
+	/* Le agregamos una imagen de fondo a cada article que aparecera con cada nueva ciudad*/
+	background-image: url('http://www.latinoaustralia.com/public/images/images_upload_comunicaciones/laeis/destino-australia/Clima_1.jpg');
+}
+
+.main-header{
+	/*Fuentes extenernas desde Google Fonts*/
+	background-color: #16210B;
+	font-size: 120%;
+	color: #DDD;
+}
+
+.card__title, .card__time{
+	margin: 0;
+	padding: 0;
+}
+
+.loader{
+	padding: 2em;
+	text-align: center;
+	background-color: olive;
+	font-size: 100%
+}
+
+.card{
+	display:block;
+	background-color: #DDD;
+	opacity: 0.8;
+	font-family: 'Arima Madurai', cursive;
+	padding: 0;
+}
+	
+	.card__image{
+		display: block;
+		margin-left: 35%;	
+	}
+
+	.card__info{
+		display: inline-block;
+		padding: 0.1em;
+		margin-top: 2em;
+		margin-left: 10vw;
+		text-align: center;
+		color: black;
+		border-radius:10px; 
+		box-shadow: 2px 2px 5px #CE8117;
+		opacity: 0.8;
+		font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", "sans serif";
+		font-size: 1.5em;
+		background-color: #DDD;
+
+	}	
+
+	.card__mint::before{
+		content: "MIN ";
+		color: green;
+	}	
+
+	.card__maxt::before{
+		content: "MAX";
+		color: red;
+	}
+	
+	.card__temp{
+		font-size: 2em;
+		display: block ;
+	}
+
+
+/*estilos del formulario css*/
+
+.search__text{
+	width: 58%;
+	height: 3em;
+	font-weight: bolder;		
+}
+
+.search__btn{
+	width: 20%;
+	height: 3em;
+	border-radius: 5px;
+	background-color: orange;
+	font-weight: bolder;
+	border-style: outset;
+}
